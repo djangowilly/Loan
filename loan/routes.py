@@ -25,4 +25,4 @@ def loan():
             return redirect(url_for('loan'))
         flash(f"successful !", 'success')
         return redirect(url_for('home'))
-    return render_template('loan.html', form=form)
+    return render_template('loan.html', form=form, title='New_Member')

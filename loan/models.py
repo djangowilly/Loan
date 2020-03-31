@@ -10,7 +10,7 @@ class Loan(db.Model):
     date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     loan_amount = db.Column(db.Integer, nullable=False)
     period = db.Column(db.Integer, nullable=False)
-    interest_rate = db.Column(db.Integer, nullable=False)
+    interest_rate = db.Column(db.Integer, nullable=False, default=10)
     total_loan = db.Column(db.Integer, nullable=True)
 
     def __repr__(self):

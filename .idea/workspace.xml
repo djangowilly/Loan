@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdbd57b1-d836-46e0-8aa5-9a6c38fcfd24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loan/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/loan/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loan/loan.db" beforeDir="false" afterPath="$PROJECT_DIR$/loan/loan.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loan/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/loan/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loan/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/loan/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loan/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/loan/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loan/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/loan/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loan/templates/calculator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loan/templates/new_member.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +24,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Zql22L6DRuwIszqHKSQllyfx8C" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -61,6 +59,9 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1585648632591">
