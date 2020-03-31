@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if title %}
+    <title>Loan - {{ title }}</title>
+    {% else %}
+    <title>Loan</title>
+    {% endif %}
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css.map') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+<body>
+<br>
+<nav class="navbar navbar-expand navbar-dark bg-dark" id="nav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+            aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('home') }}"><em>Loan Inventory</em><span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+
+        <!-- Adding a new member link.. -->
+        <a href="{{ url_for('loan') }}" class="navbar-brand"><em>Add member</em></a>
+
+        <form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search">
+        </form>
+    </div>
+</nav>
+<hr>
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{ category }}">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    {% block content %}
+    {% endblock content %}
+</div>
+</body>
+</html>

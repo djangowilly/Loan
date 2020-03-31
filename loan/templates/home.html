@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Id Number</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Loan Amount</th>
+        <th>Period</th>
+        <th>Interest Rate</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for loan in loans %}
+    <tr>
+        <td>{{ loan.id }}</td>
+        <td>{{ loan.name }}</td>
+        <td>{{ loan.id_number }}</td>
+        <td>{{ loan.location }}</td>
+        <td>{{ loan.date.strftime('%Y-%m-%d') }}</td>
+        <td>{{ loan.loan_amount }}</td>
+        <td>{{ loan.period }}</td>
+        <td>{{ loan.interest_rate }}</td>
+        <td>{{ loan.total_loan }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
