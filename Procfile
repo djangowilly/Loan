@@ -1,1 +1,1 @@
-web: gunicorn manage:loan
+web: gunicorn loan:app
