@@ -7,10 +7,9 @@
         <th>Name</th>
         <th>Id Number</th>
         <th>Location</th>
-        <th>Date</th>
         <th>Loan Amount</th>
-        <th>Period</th>
-        <th>Interest Rate</th>
+        <th>Payable Loan</th>
+        <th>Date</th>
     </tr>
     </thead>
     <tbody>
@@ -20,11 +19,9 @@
         <td>{{ loan.name }}</td>
         <td>{{ loan.id_number }}</td>
         <td>{{ loan.location }}</td>
-        <td>{{ loan.date.strftime('%Y-%m-%d') }}</td>
         <td>{{ loan.loan_amount }}</td>
-        <td>{{ loan.period }}</td>
-        <td>{{ loan.interest_rate }}</td>
         <td>{{ loan.total_loan }}</td>
+        <td>{{ loan.date.strftime('%Y-%m-%d') }}</td>
     </tr>
     {% endfor %}
     </tbody>
